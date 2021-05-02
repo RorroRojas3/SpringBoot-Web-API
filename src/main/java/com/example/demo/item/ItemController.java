@@ -2,6 +2,7 @@ package com.example.demo.item;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,8 +21,7 @@ public class ItemController {
     }
 
     @GetMapping
-    public List<Item> getItems()
-    {
+    public List<Item> getItems() {
         return itemService.getItems();
     }
 }

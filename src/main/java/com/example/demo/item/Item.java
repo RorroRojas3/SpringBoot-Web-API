@@ -4,14 +4,14 @@ public class Item {
 
     public Integer id;
 
-    public String Value;
+    public String value;
 
     public Item() {
     }
 
     public Item(Integer id, String value) {
         this.id = id;
-        Value = value;
+        value = value;
     }
 
     public Integer getId() {
@@ -23,10 +23,10 @@ public class Item {
     }
 
     public String getValue() {
-        return Value;
+        return value;
     }
 
     public void setValue(String value) {
-        Value = value;
+        this.value = value;
     }
 }
